@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 年 5 月 · 课堂月历</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+@page { size: A4 portrait; margin: 16mm; }
+body {
+  margin: 0;
+  padding: 24px 16px 40px;
+  background: #eef2f7;
+  color: #1f2937;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.6;
+}
+.sheet {
+  width: 100%;
+  max-width: 190mm;
+  margin: 0 auto 24px;
+  padding: 28px 30px 24px;
+  background: #ffffff;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+header { border-bottom: 2px solid #2563eb; padding-bottom: 12px; margin-bottom: 18px; }
+h1 { margin: 0; font-size: 24px; letter-spacing: 0.5px; color: #1e3a8a; }
+h2 { margin: 0 0 14px; font-size: 20px; color: #1e3a8a; }
+.meta { margin: 6px 0 0; font-size: 13px; color: #64748b; }
+table.calendar { width: 100%; border-collapse: collapse; table-layout: fixed; }
+table.calendar th {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #334155;
+  background: #eff6ff;
+  border: 1px solid #cbd5e1;
+}
+table.calendar td {
+  height: 62px;
+  padding: 6px 8px;
+  vertical-align: top;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+}
+table.calendar td.weekend { background: #fff7ed; color: #b45309; }
+table.calendar td.blank { background: #f8fafc; }
+footer { margin-top: 16px; font-size: 12px; color: #94a3b8; text-align: right; }
+ol.questions { margin: 0; padding-left: 22px; }
+li.quiz-item { margin-bottom: 20px; break-inside: avoid; }
+.question { margin: 0 0 8px; font-size: 16px; font-weight: 600; }
+ul.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+}
+li.option {
+  padding: 6px 10px;
+  font-size: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+.label {
+  display: inline-block;
+  width: 18px;
+  font-weight: 700;
+  color: #2563eb;
+}
+.answers { margin-top: 28px; page-break-before: always; break-before: page; }
+.answers h2 { border-bottom: 2px solid #f59e0b; padding-bottom: 10px; }
+ol.answer-list { margin: 0; padding-left: 22px; }
+li.answer-item { margin-bottom: 14px; break-inside: avoid; }
+.answer { margin: 0; font-weight: 600; color: #b45309; }
+.explanation { margin: 2px 0 0; font-size: 14px; color: #475569; }
+@media print {
+  body { background: #ffffff; padding: 0; }
+  .sheet { max-width: none; margin: 0; padding: 0; border: none; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<main class="sheet month-sheet">
+<header>
+<h1>2024 年 5 月 · 课堂月历</h1>
+<p class="meta">2024 年 5 月 · 共 31 天 · 闰年</p>
+</header>
+<table class="calendar">
+<thead><tr><th>周一</th><th>周二</th><th>周三</th><th>周四</th><th>周五</th><th>周六</th><th>周日</th></tr></thead>
+<tbody>
+<tr><td class="blank"></td><td class="blank"></td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day weekend">4</td><td class="day weekend">5</td></tr>
+<tr><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day weekend">11</td><td class="day weekend">12</td></tr>
+<tr><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day weekend">18</td><td class="day weekend">19</td></tr>
+<tr><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day weekend">25</td><td class="day weekend">26</td></tr>
+<tr><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day">31</td><td class="blank"></td><td class="blank"></td></tr>
+<tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+</tbody>
+</table>
+<footer>calendarquiz · A4 可打印月历</footer>
+</main>
+</body>
+</html>

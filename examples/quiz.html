@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日期推理练习</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+@page { size: A4 portrait; margin: 16mm; }
+body {
+  margin: 0;
+  padding: 24px 16px 40px;
+  background: #eef2f7;
+  color: #1f2937;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.6;
+}
+.sheet {
+  width: 100%;
+  max-width: 190mm;
+  margin: 0 auto 24px;
+  padding: 28px 30px 24px;
+  background: #ffffff;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+header { border-bottom: 2px solid #2563eb; padding-bottom: 12px; margin-bottom: 18px; }
+h1 { margin: 0; font-size: 24px; letter-spacing: 0.5px; color: #1e3a8a; }
+h2 { margin: 0 0 14px; font-size: 20px; color: #1e3a8a; }
+.meta { margin: 6px 0 0; font-size: 13px; color: #64748b; }
+table.calendar { width: 100%; border-collapse: collapse; table-layout: fixed; }
+table.calendar th {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #334155;
+  background: #eff6ff;
+  border: 1px solid #cbd5e1;
+}
+table.calendar td {
+  height: 62px;
+  padding: 6px 8px;
+  vertical-align: top;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+}
+table.calendar td.weekend { background: #fff7ed; color: #b45309; }
+table.calendar td.blank { background: #f8fafc; }
+footer { margin-top: 16px; font-size: 12px; color: #94a3b8; text-align: right; }
+ol.questions { margin: 0; padding-left: 22px; }
+li.quiz-item { margin-bottom: 20px; break-inside: avoid; }
+.question { margin: 0 0 8px; font-size: 16px; font-weight: 600; }
+ul.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+}
+li.option {
+  padding: 6px 10px;
+  font-size: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+.label {
+  display: inline-block;
+  width: 18px;
+  font-weight: 700;
+  color: #2563eb;
+}
+.answers { margin-top: 28px; page-break-before: always; break-before: page; }
+.answers h2 { border-bottom: 2px solid #f59e0b; padding-bottom: 10px; }
+ol.answer-list { margin: 0; padding-left: 22px; }
+li.answer-item { margin-bottom: 14px; break-inside: avoid; }
+.answer { margin: 0; font-weight: 600; color: #b45309; }
+.explanation { margin: 2px 0 0; font-size: 14px; color: #475569; }
+@media print {
+  body { background: #ffffff; padding: 0; }
+  .sheet { max-width: none; margin: 0; padding: 0; border: none; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<main class="sheet quiz-sheet">
+<header>
+<h1>日期推理练习</h1>
+<p class="meta">共 10 题 · 四选一 · 建议限时完成</p>
+</header>
+<ol class="questions">
+<li class="quiz-item">
+<p class="question">1. 2010-03-13 是星期几？</p>
+<ul class="options"><li class="option"><span class="label">A</span>星期二</li><li class="option"><span class="label">B</span>星期六</li><li class="option"><span class="label">C</span>星期三</li><li class="option"><span class="label">D</span>星期四</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">2. 2029 年 4 月共有多少天？</p>
+<ul class="options"><li class="option"><span class="label">A</span>31</li><li class="option"><span class="label">B</span>30</li><li class="option"><span class="label">C</span>29</li><li class="option"><span class="label">D</span>28</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">3. 下面哪一年是闰年？</p>
+<ul class="options"><li class="option"><span class="label">A</span>1757</li><li class="option"><span class="label">B</span>1673</li><li class="option"><span class="label">C</span>1668</li><li class="option"><span class="label">D</span>1814</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">4. 从 2023-02-18 到 2024-02-18 相差多少天？</p>
+<ul class="options"><li class="option"><span class="label">A</span>366</li><li class="option"><span class="label">B</span>367</li><li class="option"><span class="label">C</span>364</li><li class="option"><span class="label">D</span>365</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">5. 2029-04-16 是星期几？</p>
+<ul class="options"><li class="option"><span class="label">A</span>星期一</li><li class="option"><span class="label">B</span>星期四</li><li class="option"><span class="label">C</span>星期二</li><li class="option"><span class="label">D</span>星期三</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">6. 1963 年 3 月共有多少天？</p>
+<ul class="options"><li class="option"><span class="label">A</span>30</li><li class="option"><span class="label">B</span>29</li><li class="option"><span class="label">C</span>28</li><li class="option"><span class="label">D</span>31</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">7. 下面哪一年是闰年？</p>
+<ul class="options"><li class="option"><span class="label">A</span>1775</li><li class="option"><span class="label">B</span>1868</li><li class="option"><span class="label">C</span>1853</li><li class="option"><span class="label">D</span>1973</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">8. 从 2019-09-14 到 2019-12-08 相差多少天？</p>
+<ul class="options"><li class="option"><span class="label">A</span>87</li><li class="option"><span class="label">B</span>86</li><li class="option"><span class="label">C</span>85</li><li class="option"><span class="label">D</span>84</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">9. 2016-01-31 是星期几？</p>
+<ul class="options"><li class="option"><span class="label">A</span>星期日</li><li class="option"><span class="label">B</span>星期五</li><li class="option"><span class="label">C</span>星期四</li><li class="option"><span class="label">D</span>星期二</li></ul>
+</li>
+<li class="quiz-item">
+<p class="question">10. 1917 年 2 月共有多少天？</p>
+<ul class="options"><li class="option"><span class="label">A</span>31</li><li class="option"><span class="label">B</span>29</li><li class="option"><span class="label">C</span>30</li><li class="option"><span class="label">D</span>28</li></ul>
+</li>
+</ol>
+</main>
+</body>
+</html>
